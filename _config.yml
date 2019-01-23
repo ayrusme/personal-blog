@@ -1,0 +1,17 @@
+title: Surya Raman
+email: hello@suryaraman.blog
+description: This website is my personal blog and my portfolio! 
+url: "https://suryaraman.blog"
+
+social:
+  twitter: https://twitter.com/ayrusme
+  github:  https://github.com/ayrusme
+  linkedin: https://www.linkedin.com/in/suryaraman/
+  spotify: https://open.spotify.com/user/ayrusme?si=jTzwA7FEROiFlnZCBTOyTg
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
