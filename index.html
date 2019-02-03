@@ -45,7 +45,6 @@ layout: default
     </style>
 </head>
 
-
 <div class="wrapperDiv">
     <div class="mainDiv">
         <p class="welcomeText"></p>
@@ -56,23 +55,26 @@ layout: default
     </div>
 
     <div class="thirdDiv">
-        <span>Backend Developer 💻</span>
+        <span>Backend Developer <i class="fab fa-python"></i></span>
         <span>Enfield Lover <i class="fas fa-motorcycle"></i> </span>
         <span>Dog Owner <i class="fas fa-dog"></i> </span>
-        <span>Dreamer <i class="fas fa-trophy"></i> </span>
+
     </div>
 
     <div class="socialMediaDiv">
-        {% for socialMediaElement in site.social %}           
-            <a href="{{socialMediaElement[1]}}" style="padding:1%">
-                <i class="fab fa-{{socialMediaElement[0]}}"></i> {{socialMediaElement[0] | capitalize }}
-            </a>
+        {% for socialMediaElement in site.social %}
+        <a href="{{socialMediaElement[1]}}" style="padding:1%">
+            <i class="fa-3x fab fa-{{socialMediaElement[0]}}"></i>
+        </a>
         {% endfor %}
-        <a href="{{site.email}}" style="padding:1%"> 
-            <i class="fas fa-envelope-open"></i> Email
+        <a href="mailto:{{site.email}}" style="padding:1%">
+            <i class="fa-3x fas fa-envelope-open"></i>
         </a>
     </div>
-    
+
 </div>
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">

@@ -3,6 +3,7 @@ email: hello@suryaraman.blog
 description: This website is my personal blog and my portfolio! 
 url: "https://suryaraman.blog"
 
+# ALl my social media
 social:
   twitter: https://twitter.com/ayrusme
   github:  https://github.com/ayrusme
@@ -16,3 +17,9 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Site Pages
+collections:
+  blogs:
+    output: true
+    permalink: /:collection/:path/
