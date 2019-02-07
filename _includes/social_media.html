@@ -1,0 +1,10 @@
+<div class="container-fluid bg-dark text-center pt-xl-5 pt-l-5 pt-md-5 pt-lg-5">
+    {% for socialMediaElement in site.social %}
+    <a href="{{socialMediaElement[1]}}" target="_blank" style="padding:1%">
+        <i class="fa-3x fab fa-{{socialMediaElement[0]}}"></i>
+    </a>
+    {% endfor %}
+    <a href="mailto:{{site.email}}" style="padding:1%">
+        <i class="fa-3x fas fa-envelope-open"></i>
+    </a>
+</div>

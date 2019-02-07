@@ -1,7 +1,8 @@
 title: Surya Raman
 email: hello@suryaraman.blog
-description: This website is my personal blog and my portfolio! 
+description: Developer. Human. 
 url: "https://suryaraman.blog"
+lang: "en"
 
 # ALl my social media
 social:
@@ -13,7 +14,6 @@ social:
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -23,3 +23,7 @@ collections:
   blogs:
     output: true
     permalink: /:collection/:path/
+
+sass:
+  sass_dir: _scss
+  style: compressed
