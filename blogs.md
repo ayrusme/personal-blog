@@ -1,12 +1,5 @@
 ---
 title: Blog Posts
-permalink: /blog
+permalink: /blogs
+layout: blogs
 ---
-
-{% for blog in site.blogs %}
-  <h2>
-    <a href="{{ blog.url }}">
-      {{ blog.title }}
-    </a>
-  </h2>
-{% endfor %}

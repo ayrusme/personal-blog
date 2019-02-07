@@ -1,0 +1,10 @@
+<div class="container-fluid text-center">
+  {% for blog in site.blogs %}
+    <small>{{blog.date | date: "%a, %b %d, %y"}}</small>
+    <h2>
+      <a href="{{ blog.url }}">
+        {{ blog.title }}
+      </a>
+    </h2>
+  {% endfor %}
+</div>
