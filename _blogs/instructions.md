@@ -18,7 +18,7 @@ Ironically, I know the minimum, and maximum element of the list as I am initiali
 
 I am going to be using `Python` to run this example. I am going to plot the result with the help of `pandas` and `matplotlib`. One function will run a single loop per instruction, herewith referred to as `single`, as this guy is running single instruction in a loop. Let's call the other guy `multiple`, as that guy is going to run multiple instructions per iteration of the loop.
 
-![source code](assets/images/code.png){:class="img-fluid"}
+<script src="https://gist.github.com/ayrusme/7a6f2e1b9edcd56313c8b84b7bb6250a.js"></script>
 
 The iterator was multiplied by a factor two with every iteration, and it took an average run time of three minutes with about three tries. The results were the same, and it indicated only one thing.
 
