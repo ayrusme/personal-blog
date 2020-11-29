@@ -7,7 +7,7 @@ categories: ["javascript"]
 ---
 # Javascript Proxy
 
-Javascript built-ins has a great feature called "Proxy", which is literally its namesake - a substitute. Proxies can be used in the place of the actual objects to achieve a "man-in-the-middle". This proxy object will help us manipulate how the actual object itself behaves.
+Javascript built-ins has a great feature called "Proxy", which is literally its namesake - a substitute. Proxies can be used in the place of the actual objects to achieve a `man-in-the-middle`. This proxy object will help us manipulate how the actual object itself behaves.
 
 For example, let's take a look at this
 
