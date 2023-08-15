@@ -9,7 +9,7 @@ social:
   twitter: https://twitter.com/ayrusme
   github:  https://github.com/ayrusme
   linkedin: https://www.linkedin.com/in/suryaraman/
-  stack-overflow: https://stackoverflow.com/users/3831618/thatrockbottomprogrammer
+  stack-overflow: https://stackoverflow.com/users/3831618/ayrusme
 
 # Build settings
 markdown: kramdown
@@ -25,7 +25,7 @@ plugins:
 collections:
   blogs:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path
 
 sass:
   sass_dir: _scss
