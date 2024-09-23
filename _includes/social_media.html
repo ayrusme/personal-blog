@@ -1,8 +1,20 @@
 <div class="container-fluid bg-dark text-center pt-xl-5 pt-l-5 pt-md-5 pt-lg-5">
-    {% for socialMediaElement in site.social %}
-    <a href="{{socialMediaElement[1]}}" target="_blank" style="padding:1%">
-        <i class="fa-3x fab fa-{{socialMediaElement[0]}}"></i>
-    </a>
+    {% for entry in site.social %}
+        {% assign platform = entry[0] %}
+        {% assign details = entry[1] %}
+        {% assign icon_class = '' %}
+        {% assign icon_family = 'fab' %}
+        {% if details['fa-icon-class'] %}
+            {% assign icon_class = '' | append: details['fa-icon-class'] %}
+        {% else %}
+            {% assign icon_class = 'fa-' | append: platform %}
+        {% endif %}
+        {% if details['fa-icon-family'] %}
+            {% assign icon_family = '' | append: details['fa-icon-family'] %}
+        {% endif %}
+        <a href="{{ details.url }}" target="_blank" style="padding:1%">
+            <i class="fa-3x {{ icon_family }} {{ icon_class }}"></i>
+        </a>
     {% endfor %}
     <a href="mailto:{{site.email}}" style="padding:1%">
         <i class="fa-3x fas fa-envelope-open"></i>

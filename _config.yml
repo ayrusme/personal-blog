@@ -6,10 +6,18 @@ lang: "en"
 
 # ALl my social media
 social:
-  twitter: https://twitter.com/ayrusme
-  github:  https://github.com/ayrusme
-  linkedin: https://www.linkedin.com/in/suryaraman/
-  stack-overflow: https://stackoverflow.com/users/3831618/thatrockbottomprogrammer
+  twitter:
+    url: https://twitter.com/ayrusme
+  github:
+    url: https://github.com/ayrusme
+  linkedin:
+    url: https://www.linkedin.com/in/suryaraman/
+  stack-overflow:
+    url: https://stackoverflow.com/users/3831618/thatrockbottomprogrammer
+  topmate:
+    url: https://topmate.io/surya_raman/
+    fa-icon-family: fas
+    fa-icon-class: fa-seedling
 
 # Build settings
 markdown: kramdown
