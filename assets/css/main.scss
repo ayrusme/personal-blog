@@ -4,7 +4,18 @@
 // Took me a while to understand front matter in jekyll
 // Include three dashes to the begining of the file
 
-@import "bootstrap/bootstrap";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/grid";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/jumbotron";
+@import "bootstrap/utilities";
+
 @import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css");
 
 // Black background
