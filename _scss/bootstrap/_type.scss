@@ -123,15 +123,3 @@ mark,
     content: "\2014 \00A0"; // em dash, nbsp
   }
 }
-
-.greeting::before {
-  content: "வணக்கம்";
-}
-
-.greeting:hover::before {
-  content: "";
-}
-
-.greeting:hover::after {
-  content: "Hello 👋";
-}

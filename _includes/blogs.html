@@ -1,6 +1,6 @@
 <div class="container-fluid text-center">
   {% for blog in site.blogs reversed %}
-    <small>{{blog.date | date: "%a, %b %d, %y"}}</small>
+    <small>{{blog.date | date: "%a, %b %d, %Y"}}</small>
     <h2>
       <a href="{{ blog.url }}">
         {{ blog.title }}

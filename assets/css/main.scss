@@ -7,10 +7,94 @@
 @import "bootstrap/bootstrap";
 @import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css");
 
-// Only apply flex to greeting, not all h1 elements
-.greeting {
-  display: flex;
-  justify-content: center;
+// Black background
+.bg-black {
+  background-color: #000000 !important;
+}
+
+// Global link colors - electric cosmos theme
+a {
+  color: #c33764; // Cosmic pink from gradient
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  &:hover,
+  &:focus {
+    color: #4776e6; // Electric blue on hover
+    text-decoration: none;
+  }
+}
+
+// Auto-cycling animated greeting
+.greeting-container {
+  text-align: center;
+  min-height: 4.5rem; // Reserve space for greeting
+}
+
+.greeting-animated {
+  position: relative;
+  display: inline-block;
+  height: 4.5rem;
+}
+
+.greeting-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  white-space: nowrap;
+  background: linear-gradient(135deg, #4776e6 0%, #8e54e9 50%, #c33764 100%); // "Electric Cosmos" - innovation meets vision
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: greetingCycle 6s infinite ease-in-out;
+  will-change: transform, opacity; // Performance hint for GPU acceleration
+  cursor: text; // Indicate text is selectable
+  user-select: text; // Enable text selection
+}
+
+// Pause animation on hover to allow text selection
+.greeting-animated:hover .greeting-text {
+  animation-play-state: paused;
+}
+
+.greeting-tamil {
+  animation-delay: 0s;
+}
+
+.greeting-english {
+  animation-delay: 3s;
+}
+
+@keyframes greetingCycle {
+  0% { 
+    opacity: 0; 
+    transform: translateX(-50%) translateY(20px);
+  }
+  5% { 
+    opacity: 1; 
+    transform: translateX(-50%) translateY(0);
+  }
+  45% { 
+    opacity: 1; 
+    transform: translateX(-50%) translateY(0);
+  }
+  50% { 
+    opacity: 0; 
+    transform: translateX(-50%) translateY(-20px);
+  }
+  100% { 
+    opacity: 0; 
+    transform: translateX(-50%) translateY(-20px);
+  }
+}
+
+// Gradient for name heading - "Flare" gradient from uigradients
+.gradient-name {
+  background: linear-gradient(135deg, #4776e6 0%, #8e54e9 50%, #c33764 100%); // "Electric Cosmos" - innovation meets vision
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 // Accessibility: Skip to main content link
@@ -33,15 +117,28 @@
   }
 }
 
-// Accessibility: Fix color contrast for nav links
+// Consistent color scheme for all links and icons - electric cosmos theme
 .navbar-dark .nav-link {
-  color: #6cb2ff !important; // Improved contrast: 5.16:1 (WCAG AA compliant)
+  color: #c33764 !important; // Cosmic pink from gradient
   transition: color 0.3s ease;
 }
 
 .navbar-dark .nav-link:hover,
 .navbar-dark .nav-link:focus {
-  color: #9ccfff !important; // Even better contrast on hover: 7.5:1
+  color: #4776e6 !important; // Electric blue on hover
+}
+
+// Social media icons - consistent electric cosmos theme
+section[aria-label="Social Media and Contact"] {
+  a {
+    color: #c33764; // Cosmic pink from gradient
+    transition: color 0.3s ease;
+    
+    &:hover,
+    &:focus {
+      color: #4776e6; // Electric blue
+    }
+  }
 }
 
 // Performance: Optimize font loading
@@ -56,7 +153,7 @@ html {
 
 // Improve focus visibility for keyboard navigation
 *:focus {
-  outline: 2px solid #6cb2ff;
+  outline: 2px solid #c33764; // Cosmic pink from gradient
   outline-offset: 2px;
 }
 
