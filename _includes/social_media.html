@@ -1,25 +1,27 @@
-<div class="container-fluid bg-dark text-center pt-xl-5 pt-l-5 pt-md-5 pt-lg-5">
-    {% for entry in site.social %}
-        {% assign platform = entry[0] %}
-        {% assign details = entry[1] %}
-        {% assign icon_class = '' %}
-        {% assign icon_family = 'fab' %}
-        {% if details['fa-icon-class'] %}
-            {% assign icon_class = '' | append: details['fa-icon-class'] %}
-        {% else %}
-            {% assign icon_class = 'fa-' | append: platform %}
-        {% endif %}
-        {% if details['fa-icon-family'] %}
-            {% assign icon_family = '' | append: details['fa-icon-family'] %}
-        {% endif %}
-        <a href="{{ details.url }}" target="_blank" style="padding:1%">
-            <i class="fa-3x {{ icon_family }} {{ icon_class }}"></i>
+<section class="container-fluid bg-dark text-center pt-xl-5 pt-l-5 pt-md-5 pt-lg-5" aria-label="Social Media and Contact">
+    <nav aria-label="Social media links">
+        {% for entry in site.social %}
+            {% assign platform = entry[0] %}
+            {% assign details = entry[1] %}
+            {% assign icon_class = '' %}
+            {% assign icon_family = 'fab' %}
+            {% if details['fa-icon-class'] %}
+                {% assign icon_class = '' | append: details['fa-icon-class'] %}
+            {% else %}
+                {% assign icon_class = 'fa-' | append: platform %}
+            {% endif %}
+            {% if details['fa-icon-family'] %}
+                {% assign icon_family = '' | append: details['fa-icon-family'] %}
+            {% endif %}
+            <a href="{{ details.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ platform | capitalize }} profile" style="padding:1%">
+                <i class="fa-3x {{ icon_family }} {{ icon_class }}" aria-hidden="true"></i>
+            </a>
+        {% endfor %}
+        <a href="mailto:{{site.email}}" aria-label="Email Surya Raman" style="padding:1%">
+            <i class="fa-3x fas fa-envelope-open" aria-hidden="true"></i>
         </a>
-    {% endfor %}
-    <a href="mailto:{{site.email}}" style="padding:1%">
-        <i class="fa-3x fas fa-envelope-open"></i>
-    </a>
-    <a href="/resume/" target="_blank" style="padding:1%">
-        <i class="fa-3x fas fa-user-circle"></i>
-    </a>
-</div>
+        <a href="/resume/" target="_blank" rel="noopener noreferrer" aria-label="View Resume (PDF)" style="padding:1%">
+            <i class="fa-3x fas fa-file-pdf" aria-hidden="true"></i>
+        </a>
+    </nav>
+</section>

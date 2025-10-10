@@ -4,11 +4,16 @@
     {%- include head.html -%}
 
     <body>
+        <!-- Accessibility: Skip to main content link -->
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        
         {%- include header.html -%}
 
-        {%- include body.html -%}
+        <main id="main-content" role="main">
+            {%- include body.html -%}
 
-        {%- include social_media.html -%}
+            {%- include social_media.html -%}
+        </main>
 
         {%- include fixed_footer.html -%}
         
