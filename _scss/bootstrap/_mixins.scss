@@ -6,7 +6,6 @@
 @import "mixins/breakpoints";
 @import "mixins/hover";
 @import "mixins/image";
-@import "mixins/badge";
 @import "mixins/resize";
 @import "mixins/screen-reader";
 @import "mixins/size";
@@ -17,15 +16,9 @@
 @import "mixins/visibility";
 
 // // Components
-@import "mixins/alert";
-@import "mixins/buttons";
 @import "mixins/caret";
-@import "mixins/pagination";
 @import "mixins/lists";
-@import "mixins/list-group";
 @import "mixins/nav-divider";
-@import "mixins/forms";
-@import "mixins/table-row";
 
 // // Skins
 @import "mixins/background-variant";
