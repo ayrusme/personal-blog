@@ -141,16 +141,95 @@ a {
   color: #4776e6 !important; // Electric blue on hover
 }
 
-// Social media icons - consistent electric cosmos theme
-section[aria-label="Social Media and Contact"] {
+// Social media icons - consistent electric cosmos theme with responsive labels
+.social-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.social-icon-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem;
+  
   a {
     color: #c33764; // Cosmic pink from gradient
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
     
     &:hover,
     &:focus {
       color: #4776e6; // Electric blue
+      transform: translateY(-3px);
     }
+  }
+}
+
+.social-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: #c33764; // Cosmic pink from gradient
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  
+  // Mobile: Always visible labels
+  display: block;
+  opacity: 1;
+  
+  // Desktop: Tooltip on hover
+  @media (min-width: 768px) {
+    // Hide label by default on desktop
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(199, 55, 100, 0.95); // Cosmic pink with transparency
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    
+    // Tooltip arrow
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: rgba(199, 55, 100, 0.95);
+    }
+  }
+}
+
+// Desktop hover state
+@media (min-width: 768px) {
+  .social-icon-wrapper:hover .social-label,
+  .social-icon-wrapper a:focus .social-label {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+// Mobile: label inherits link hover color
+@media (max-width: 767.98px) {
+  .social-icon-wrapper a:hover .social-label,
+  .social-icon-wrapper a:focus .social-label {
+    color: #4776e6; // Electric blue on hover
   }
 }
 

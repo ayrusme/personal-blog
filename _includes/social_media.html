@@ -1,40 +1,61 @@
 <section class="container-fluid bg-black text-center pt-xl-5 pt-l-5 pt-md-5 pt-lg-5" aria-label="Social Media and Contact">
-    <nav aria-label="Social media links">
+    <nav aria-label="Social media links" class="social-icons-container">
         <!-- Professional-first order for Engineering Leader profile -->
         
         <!-- 1. LinkedIn - Primary professional network -->
-        <a href="{{ site.social.linkedin.url }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" style="padding:1%">
-            <i class="fa-3x fab fa-linkedin" aria-hidden="true"></i>
-        </a>
+        <div class="social-icon-wrapper">
+            <a href="{{ site.social.linkedin.url }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <i class="fa-3x fab fa-linkedin" aria-hidden="true"></i>
+                <span class="social-label">LinkedIn</span>
+            </a>
+        </div>
         
         <!-- 2. GitHub - Technical credibility -->
-        <a href="{{ site.social.github.url }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" style="padding:1%">
-            <i class="fa-3x fab fa-github" aria-hidden="true"></i>
-        </a>
+        <div class="social-icon-wrapper">
+            <a href="{{ site.social.github.url }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <i class="fa-3x fab fa-github" aria-hidden="true"></i>
+                <span class="social-label">GitHub</span>
+            </a>
+        </div>
         
         <!-- 3. Resume - Formal credentials -->
-        <a href="/resume/" target="_blank" rel="noopener noreferrer" aria-label="View Resume (PDF)" style="padding:1%">
-            <i class="fa-3x fas fa-file-pdf" aria-hidden="true"></i>
-        </a>
+        <div class="social-icon-wrapper">
+            <a href="/resume/" target="_blank" rel="noopener noreferrer" aria-label="View Resume (PDF)">
+                <i class="fa-3x fas fa-file-pdf" aria-hidden="true"></i>
+                <span class="social-label">Resume</span>
+            </a>
+        </div>
         
         <!-- 4. Topmate - Mentoring & giving back -->
-        <a href="{{ site.social.topmate.url }}" target="_blank" rel="noopener noreferrer" aria-label="Topmate profile" style="padding:1%">
-            <i class="fa-3x fas fa-seedling" aria-hidden="true"></i>
-        </a>
+        <div class="social-icon-wrapper">
+            <a href="{{ site.social.topmate.url }}" target="_blank" rel="noopener noreferrer" aria-label="Topmate profile">
+                <i class="fa-3x fas fa-seedling" aria-hidden="true"></i>
+                <span class="social-label">Topmate</span>
+            </a>
+        </div>
         
         <!-- 5. Stack Overflow - Community expertise -->
-        <a href="{{ site.social['stack-overflow'].url }}" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow profile" style="padding:1%">
-            <i class="fa-3x fab fa-stack-overflow" aria-hidden="true"></i>
-        </a>
+        <div class="social-icon-wrapper">
+            <a href="{{ site.social['stack-overflow'].url }}" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow profile">
+                <i class="fa-3x fab fa-stack-overflow" aria-hidden="true"></i>
+                <span class="social-label">Stack Overflow</span>
+            </a>
+        </div>
         
         <!-- 6. Email - Direct contact -->
-        <a href="mailto:{{site.email}}" aria-label="Email Surya Raman" style="padding:1%">
-            <i class="fa-3x fas fa-envelope-open" aria-hidden="true"></i>
-        </a>
+        <div class="social-icon-wrapper">
+            <a href="mailto:{{site.email}}" aria-label="Email Surya Raman">
+                <i class="fa-3x fas fa-envelope-open" aria-hidden="true"></i>
+                <span class="social-label">Email</span>
+            </a>
+        </div>
         
         <!-- 7. Twitter - Social/personal brand -->
-        <a href="{{ site.social.twitter.url }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile" style="padding:1%">
-            <i class="fa-3x fab fa-twitter" aria-hidden="true"></i>
-        </a>
+        <div class="social-icon-wrapper">
+            <a href="{{ site.social.twitter.url }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">
+                <i class="fa-3x fab fa-twitter" aria-hidden="true"></i>
+                <span class="social-label">Twitter</span>
+            </a>
+        </div>
     </nav>
 </section>
