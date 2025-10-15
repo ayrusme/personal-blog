@@ -3,7 +3,7 @@ title:  "Automated Calorie Counting"
 date:   2021-12-05
 permalink: calorie-tracker-google-sheets
 categories: ["calories","google-sheets","javascript","wellness"]
-layout: blog_post
+layout: content
 ---
 # How I calculated calories with Google Sheets 🧮
 

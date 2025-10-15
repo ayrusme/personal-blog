@@ -2,7 +2,7 @@
 title:  "Proxy - Javascript"
 date:   2020-11-29
 permalink: proxy-js
-layout: blog_post
+layout: content
 categories: ["javascript"]
 ---
 # Javascript Proxy

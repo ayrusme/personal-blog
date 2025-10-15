@@ -3,7 +3,7 @@ title:  "Persist Postgres Data with Docker"
 date:   2019-09-04
 permalink: docker-postgres-volume
 categories: ["docker"]
-layout: blog_post
+layout: content
 ---
 # How to persist data in Docker 🐳
 

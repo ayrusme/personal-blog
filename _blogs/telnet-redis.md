@@ -2,7 +2,7 @@
 title:  "Telnet and RESP"
 date:   2023-08-16
 permalink: redis-telnet
-layout: blog_post
+layout: content
 categories: ["redis","telnet","resp","databases"]
 ---
 # Redis without the CLI (or the GUI)

@@ -2,7 +2,7 @@
 title:  "Quick Sort - My Learnings"
 date:   2021-02-01
 permalink: quick_sort
-layout: blog_post
+layout: content
 categories: ["algorithms", "sorting"]
 ---
 

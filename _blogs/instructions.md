@@ -3,7 +3,7 @@ title:  "Instructions vs Loops"
 date:   2019-02-07
 permalink: instructions-vs-loops
 categories: ["performance"]
-layout: blog_post
+layout: content
 ---
 # More Instructions per loop vs More Loops per Instruction?
 

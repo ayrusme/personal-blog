@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default:"en"}}" class="bg-black text-white">
+
+    {%- include head.html -%}
+
+    <body>
+        <!-- Accessibility: Skip to main content link -->
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        
+        {%- include header.html -%}
+
+        <main id="main-content" role="main" class="bg-black">
+            {%- if page.layout == 'blog_post' or page.categories -%}
+                <div class="container-fluid bg-black text-white py-5">
+                    <div class="container">
+                        <div class="blog-content">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+            {%- else -%}
+                {{ content }}
+            {%- endif -%}
+        </main>
+
+        {%- include footer.html -%}
+        
+        {%- include scripts.html -%}
+    </body>
+
+</html>
