@@ -11,7 +11,7 @@ While running some scripts to clear cache, a thought occured to me to experiment
 
 ## Redis Serialization Protocol (RESP)
 
-Redis uses a protocol called the [Redis Serialization Protocol (RESP)](https://redis.io/docs/reference/protocol-spec/), which is a simple text-based protocol that allows clients to send commands to the server and receive responses. The protocol is designed to be human-readable and easy to parse. When you use Telnet to connect to a Redis server, you're essentially opening a raw socket connection to the Redis server's port. You can then manually type in Redis commands following the RESP format. 
+Redis uses a protocol called the [Redis Serialization Protocol (RESP)](https://redis.io/docs/latest/develop/reference/protocol-spec/), which is a simple text-based protocol that allows clients to send commands to the server and receive responses. The protocol is designed to be human-readable and easy to parse. When you use Telnet to connect to a Redis server, you're essentially opening a raw socket connection to the Redis server's port. You can then manually type in Redis commands following the RESP format. 
 
 The basic structure of a Redis command is:
 
@@ -42,4 +42,4 @@ Outside of `telnet`, any other tool capable of handling network connections and 
 
 ## Suggested Reading
 
-[Redis Protocol](https://redis.io/docs/reference/protocol-spec) - This is the official spec for the redis protocol, would recommend reading the section `High-performance parser for the Redis protocol` if you're interested in writing your own redis client. 
+[Redis Protocol](https://redis.io/docs/latest/develop/reference/protocol-spec/) - This is the official spec for the redis protocol, would recommend reading the section `High-performance parser for the Redis protocol` if you're interested in writing your own redis client. 
