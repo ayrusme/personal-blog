@@ -14,7 +14,9 @@ Welcome to my digital space! I'm Surya Raman, an Engineering Leader passionate a
 
 I'm an Engineering Leader who transforms complex technical challenges into elegant, scalable solutions. With over 8 years of experience, I've built systems that power millions of users while leading teams that deliver exceptional results.
 
-My journey at [yellow.ai](https://yellow.ai) has been incredible - from scaling messaging infrastructure to handle 8 billion messages per year, to reducing cloud costs by $200,000+ annually. I've grown from an SDE-1 to Engineering Manager, building and leading teams from 6 to 14 engineers.
+Today, I lead the Developer Ecosystem and Public APIs team at [PagerDuty](https://www.pagerduty.com), where we own the surface area that developers and partners use to integrate with the platform - the public APIs, webhooks, and OAuth flows that power thousands of integrations across our customer base. My focus is on making PagerDuty one of the easiest enterprise platforms to build on, while keeping the foundations boring, reliable, and well-loved by the developer community.
+
+Before PagerDuty, I spent several years at [yellow.ai](https://yellow.ai) - scaling messaging infrastructure to handle 8 billion messages per year, reducing cloud costs by $200,000+ annually, and growing from an SDE-1 to Engineering Manager while building and leading teams from 6 to 14 engineers.
 
 What drives me is the impact of technology on real-world problems. Whether it's architecting microservices that handle massive scale, optimizing database performance, or mentoring the next generation of developers, I believe in creating environments where engineers can do their best work and deliver exceptional results.
 
