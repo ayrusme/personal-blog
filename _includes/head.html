@@ -21,7 +21,11 @@
     {%- feed_meta -%}
     
     <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/69c62c7d60.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/69c62c7d60.js" crossorigin="anonymous" defer></script>
+
+    <!-- Gist syntax theme: non-blocking load (only styles embedded gists) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lonekorean/gist-syntax-themes@d49b91b3/stylesheets/one-dark.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lonekorean/gist-syntax-themes@d49b91b3/stylesheets/one-dark.css"></noscript>
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
         {%- include google-analytics.html -%}
     {%- endif -%}

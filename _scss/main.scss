@@ -18,7 +18,6 @@
 @import "bootstrap/jumbotron";
 @import "bootstrap/utilities";
 
-@import url("https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css");
 
 // Black background
 .bg-black {
@@ -37,7 +36,7 @@ main {
 
 // Global link colors - electric cosmos theme
 a {
-  color: #c33764; // Cosmic pink from gradient
+  color: #d64d77; // Cosmic pink from gradient
   text-decoration: none;
   transition: color 0.3s ease;
   
@@ -381,7 +380,7 @@ a {
 }
 
 .personal-highlight i {
-  color: #c33764;
+  color: #d64d77;
   margin-right: 0.25rem;
 }
 
@@ -439,7 +438,7 @@ a {
   
   // Links styling
   a {
-    color: #c33764; // Cosmic pink from gradient
+    color: #d64d77; // Cosmic pink from gradient
     text-decoration: none;
     transition: color 0.3s ease;
     
@@ -452,7 +451,7 @@ a {
   // Code styling
   code {
     background: rgba(71, 118, 230, 0.1);
-    color: #c33764;
+    color: #d64d77;
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-size: 0.9em;
@@ -567,7 +566,7 @@ a {
 
 .social-icon {
   font-size: 2.5rem;
-  color: #c33764;
+  color: #d64d77;
   margin-bottom: 0.75rem;
   transition: all 0.3s ease;
 }
@@ -686,7 +685,7 @@ a {
 
 // Consistent color scheme for all links and icons - electric cosmos theme
 .navbar-dark .nav-link {
-  color: #c33764 !important; // Cosmic pink from gradient
+  color: #d64d77 !important; // Cosmic pink from gradient
   transition: color 0.3s ease;
 }
 
@@ -713,7 +712,7 @@ a {
   position: relative;
   
   a {
-    color: #c33764; // Cosmic pink from gradient
+    color: #d64d77; // Cosmic pink from gradient
     transition: color 0.3s ease, transform 0.2s ease;
     display: flex;
     flex-direction: column;
@@ -733,7 +732,7 @@ a {
   font-size: 0.75rem;
   font-weight: 500;
   margin-top: 0.5rem;
-  color: #c33764; // Cosmic pink from gradient
+  color: #d64d77; // Cosmic pink from gradient
   transition: color 0.3s ease;
   white-space: nowrap;
   text-align: center;
